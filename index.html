@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl_PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortowanie babelkowe duh</title>
+    <style>
+
+        h2, p{
+            background-color: #e7d8f0ee;
+            text-align: center;
+            padding: 4px;
+        }
+
+        h2{
+            width: 100%;
+            font-size: 4vh;
+        }
+
+        p{
+            width: 20vw;
+            font-size: 3vh;
+            border: groove purple 3px;;
+        }
+
+        input, button{
+            border: none;
+            border-bottom: solid #e7d8f0ee 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Sortowanie bąbelkowe</h2>
+    Wpisz dowolną ilość liczb: <input type="text" id="liczby" placeholder="np. 10, 20, 30"><br>
+    <button onclick="sortowanie_babelkowe()">Posortuj</button>
+    <p id="wynik">ASdkasdkaskdk</p>
+</body>
+</html>
+<script>
+
+    function sortowanie_babelkowe(){
+        let liczby = document.querySelector("#liczby").value;
+        liczbytablica = liczby.join(" i ");
+
+        const wynik = document.querySelector("#wynik");
+
+        wynik.innerHTML = liczbytablica;
+        console.log(liczbytablica);
+    }
+
+sortowanie_babelkowe();
+</script>
